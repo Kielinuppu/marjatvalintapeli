@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARJAT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">MARJAT</h1>
+        <h2 id="game-title" style="display: none;">VALITSE OIKEA MARJA</h2>
+
+        <div id="start-screen">
+            <button id="start-button">ALOITA</button>
+        </div>
+
+        <div id="game-screen" style="display: none;">
+            <div class="game-board">
+                <div class="berry-button-wrapper">
+                    <img src="mansikka.png" alt="Mansikka" class="berry-button" data-berry="mansikka">
+                    <div class="counter" data-berry="mansikka">0</div>
+                </div>
+                <div class="berry-button-wrapper">
+                    <img src="mustikka.png" alt="Mustikka" class="berry-button" data-berry="mustikka">
+                    <div class="counter" data-berry="mustikka">0</div>
+                </div>
+                <div class="berry-button-wrapper">
+                    <img src="puolukka.png" alt="Puolukka" class="berry-button" data-berry="puolukka">
+                    <div class="counter" data-berry="puolukka">0</div>
+                </div>
+                <div class="berry-button-wrapper">
+                    <img src="vadelma.png" alt="Vadelma" class="berry-button" data-berry="vadelma">
+                    <div class="counter" data-berry="vadelma">0</div>
+                </div>
+                <div class="berry-button-wrapper">
+                    <img src="lakka.png" alt="Lakka" class="berry-button" data-berry="lakka">
+                    <div class="counter" data-berry="lakka">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="feedback" style="display: none;">
+            <div id="stars"></div>
+            <p id="score"></p>
+            <button id="play-again-button">PELAA UUDELLEEN</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

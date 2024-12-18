@@ -1,0 +1,152 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 100%;
+    padding-top: 0;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 1056px;
+    padding: 18px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 13px rgba(0,0,0,0.1);
+    margin-top: 0;
+    min-height: 75vh;
+}
+
+h1, h2 {
+    font-size: 1.5em;
+    margin: 5px 0 10px 0;
+}
+
+#main-title {
+    margin-top: 0px;
+}
+
+.game-board {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 90px;
+    margin-bottom: 15px;
+}
+
+.berry-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+}
+
+.berry-button {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.berry-button:hover {
+    transform: scale(1.05);
+}
+
+.berry-button img {
+    width: 100%;
+    height: auto;
+}
+
+.counter {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#start-button, #play-again-button {
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+#start-button:hover, #play-again-button:hover {
+    transform: scale(1.05);
+}
+
+#feedback {
+    text-align: center;
+    font-size: 24px;
+}
+
+#stars img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+@media (max-width: 880px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    .berry-button-wrapper {
+        width: 19%;
+    }
+}
+
+@media (max-width: 660px) {
+    .game-board {
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .berry-button-wrapper {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+
+    .berry-button {
+        max-width: 72px;
+        max-height: 72px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-board {
+        margin-top: 20px;
+    }
+
+    .berry-button-wrapper {
+        width: 40%;
+    }
+
+    .berry-button {
+        max-width: 66px;
+        max-height: 66px;
+    }
+
+    .counter {
+        font-size: 16px;
+    }
+}
