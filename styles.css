@@ -39,7 +39,7 @@ h1, h2 {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 90px;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
@@ -103,6 +103,27 @@ h1, h2 {
     width: 40px;
     height: 40px;
     margin: 0 5px;
+}
+
+.replay-button {
+    display: block;
+    margin: 10px auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.replay-button img {
+    width: 80%;
+    height: 80%;
+}
+
+.replay-button:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 880px) {
